@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./includes/head') %>
+</head>
+
+<body>
+    <%- include('./includes/header') %>
+
+        <main class="content-wrapper mt-5" style="margin-top: 80px !important">
+            <div class="container" style="width: 95% !important">
+                <div class="row justify-content-md-center mb-5">
+                    <div class="col-md-12 mt-5">
+                        <h2 class="text-center title">
+                            ¡Utiliza la mejor API de Rick & Morty!
+                            <hr />
+                        </h2>
+                    </div>
+                    <div class="col-md-6 mt-5 d-flex justify-content-center align-items-center">
+                        <img src="../public/img/hero-img.png" class="img-fluid rounded" alt="Goku" />
+                    </div>
+                </div>
+                <div class="row justify-content-md-center mb-5">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    ¿Por qué lo hicimos?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <strong>Esto explica la razón del proyecto.</strong> Como estudiantes de desarrollo web, es importante aprender cómo crear aplicaciones dinámicas. Usar Node.js y EJS facilita la integración de datos dinámicos con plantillas HTML de una manera sencilla y eficiente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    ¿Cómo lo estamos haciendo?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <strong>Utilizando Node.js y EJS.</strong> En este proyecto, utilizamos Node.js para manejar el backend y Express.js para crear rutas que devuelven vistas renderizadas con EJS. Esto nos permite separar la lógica de negocio de la vista y reutilizar plantillas con datos dinámicos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    ¿Qué hemos aprendido?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <strong>Lecciones del proyecto.</strong> A través de este proyecto, hemos aprendido a manejar rutas en Express, renderizar vistas con EJS, y conectar el frontend con el backend. Además, hemos entendido la importancia de crear una estructura de proyecto clara y organizada en Node.js.
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </main>
+
+        <%- include('./includes/scripts') %>
+</body>
+
+</html>
